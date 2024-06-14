@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawan Tiwari - Java Developer Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Pawan Tiwari</h1>
+            <p>Core Java Developer Fresher</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <p>Hello! I am Pawan Tiwari, a passionate core Java developer looking to start my career in software development. I have a strong foundation in Java programming and am eager to apply my skills in a professional environment.</p>
+        </section>
+
+        <section id="skills" class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java</li>
+                <li>Object-Oriented Programming (OOP)</li>
+                <li>Html & Css</li>
+                <li>Basic MySQL</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Book Management System</h3>
+                <p>A Java-based application to manage library operations, including book borrowing, returning, and inventory management.</p>
+                <button class="modal-btn" data-modal="modal1">Read More</button>
+            </div>
+            <div class="project">
+                <h3>Online Banking System</h3>
+                <p>Developed a secure online banking system using Java and Spring framework, featuring account management and transaction handling.</p>
+                <button class="modal-btn" data-modal="modal2">Read More</button>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contact</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <p id="formFeedback"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pawan Tiwari. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Book Management System</h2>
+            <p>More detailed information about the Book Management System project...</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Online Banking System</h2>
+            <p>More detailed information about the Online Banking System project...</p>
+        </div>
+    </div>
+
+    <script src="Portfolio.js"></script>
+</body>
+</html>
